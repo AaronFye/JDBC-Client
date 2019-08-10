@@ -1,0 +1,30 @@
+<web-app>
+   <!-- General description of your Web application -->
+   <display-name>
+      CNT 4714 Fall 2018 Project4
+   </display-name>
+
+   <description>
+      SQL updates for the 4th project.
+   </description>
+
+   <!-- Servlet definitions -->
+    <servlet>
+      <servlet-name>A4</servlet-name>
+      <description>
+         Handles SQL inputs.
+      </description>
+      <servlet-class> A4 </servlet-class>
+   </servlet>
+   <servlet-mapping>
+		<servlet-name>A4</servlet-name>
+		<url-pattern>/A4</url-pattern>
+    </servlet-mapping>
+    
+    <welcome-file-list>
+        <welcome-file>A4.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <servlet-method>POST</servlet-method>
+</web-app>
+
